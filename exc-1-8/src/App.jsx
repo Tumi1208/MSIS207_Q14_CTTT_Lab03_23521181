@@ -13,7 +13,7 @@ const user1 = {
 }
 
 const user2 = {
-  name: 'Tumi',
+  name: 'Tumi Pro',
   email: 'Tumi@example.com',
   avatarUrl: 'https://i.imgur.com/MK3eW3As.jpg',
   imageSize: 90,
