@@ -87,3 +87,64 @@ button:focus-visible {
   display: block;
   margin-bottom: 8px;
 }
+
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --ink:#0f172a;       /* slate-900 */
+  --muted:#64748b;     /* slate-500 */
+  --accent:#2563eb;    /* blue-600 */
+  --ring:#dbeafe;      /* blue-100 */
+  --radius:14px;
+}
+
+html,body,#root{height:100%;margin:0;background:var(--bg);color:var(--ink);font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;}
+
+.wrapper{max-width:1100px;margin:0 auto;padding:24px;}
+.topbar{
+  display:flex; align-items:center; gap:16px; justify-content:space-between; margin-bottom:20px;
+}
+.brand{display:flex; align-items:center; gap:10px;}
+.brand-badge{
+  width:36px;height:36px;border-radius:10px;background:var(--accent);color:#fff;
+  display:grid;place-items:center;font-weight:700; box-shadow:0 8px 20px rgba(37,99,235,.25);
+}
+.brand h1{font-size:18px;margin:0}
+.subtitle{color:var(--muted);font-size:13px;margin-top:2px}
+
+.grid{
+  display:grid; gap:18px;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+}
+
+.card{
+  background:var(--card); border-radius:var(--radius); padding:16px;
+  box-shadow:0 10px 24px rgba(2,6,23,.06);
+  border:1px solid #eef2ff;
+}
+.card h3{margin:0 0 12px; color:var(--accent); font-size:18px;}
+.hr{height:1px;background:#e2e8f0;margin:8px 0 12px;border:0}
+
+.profile{
+  display:grid; gap:14px;
+}
+.profile-item{
+  display:flex; gap:12px; align-items:center;
+}
+.profile-item img{
+  width:56px;height:56px;border-radius:50%;border:3px solid var(--ring);
+}
+.profile-name{font-weight:600}
+.profile-mail{color:var(--muted); font-size:14px}
+
+.btn{
+  display:inline-flex; align-items:center; gap:6px;
+  background:var(--accent); color:#fff; border:none; padding:8px 12px;
+  border-radius:10px; cursor:pointer;
+}
+.btn:active{transform:translateY(1px)}
+
+.input{
+  width:100%; padding:10px 12px; border-radius:10px; border:1px solid #e2e8f0; background:#fff;
+}
+
